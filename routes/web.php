@@ -1,11 +1,10 @@
 <?php
 
 use App\Http\Controllers\Back\DashboardController;
+use App\Http\Controllers\Front\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return redirect()->route('back.dashboard');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 Route::prefix('back')->name("back.")->group(function () {
