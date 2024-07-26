@@ -1,5 +1,10 @@
 @extends('front.app')
 
+@section('styles')
+    <!-- SPECIFIC CSS -->
+    <link href="{{ asset('front/css/home_1.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
 <main>
     <div id="carousel-home">
